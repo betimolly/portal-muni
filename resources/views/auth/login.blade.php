@@ -1,4 +1,4 @@
-<x-guest-layout>
+<x-public-layout>
     <x-auth-card>
         <x-slot name="logo">
             <a href="/">
@@ -24,7 +24,7 @@
 
             <!-- Password -->
             <div class="mt-4">
-                <x-label for="password" :value="__('Password')" />
+                <x-label for="password" :value="'Contraseña'" />
 
                 <x-input id="password" class="block mt-1 w-full"
                                 type="password"
@@ -53,4 +53,4 @@
             </div>
         </form>
     </x-auth-card>
-</x-guest-layout>
+</x-public-layout>

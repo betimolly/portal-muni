@@ -1,4 +1,4 @@
-<x-guest-layout>
+<x-public-layout>
     <x-auth-card>
         <x-slot name="logo">
             <a href="/">
@@ -21,7 +21,7 @@
 
             <!-- Username -->
             <div>
-                <x-label for="username" :value="__('Username')" />
+                <x-label for="username" :value="'Usuario'" />
 
                 <x-input id="username" class="block mt-1 w-full" type="text" name="username" :value="old('username')" required autofocus />
             </div>
@@ -35,7 +35,7 @@
 
             <!-- Password -->
             <div class="mt-4">
-                <x-label for="password" :value="__('Password')" />
+                <x-label for="password" :value="'Contraseña'" />
 
                 <x-input id="password" class="block mt-1 w-full"
                                 type="password"
@@ -45,7 +45,7 @@
 
             <!-- Confirm Password -->
             <div class="mt-4">
-                <x-label for="password_confirmation" :value="__('Confirmar Password')" />
+                <x-label for="password_confirmation" :value="'Confirmar Contraseña'" />
 
                 <x-input id="password_confirmation" class="block mt-1 w-full"
                                 type="password"
@@ -63,4 +63,4 @@
             </div>
         </form>
     </x-auth-card>
-</x-guest-layout>
+</x-public-layout>
